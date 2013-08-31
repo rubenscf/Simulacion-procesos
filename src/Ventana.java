@@ -28,13 +28,19 @@ public class Ventana extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        BarP1 = new javax.swing.JProgressBar();
+        BarP2 = new javax.swing.JProgressBar();
+        BarP3 = new javax.swing.JProgressBar();
+        bt_inicio = new javax.swing.JButton();
+        bt_parar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Simulacion de Procesos");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel2.setText("Proceso 1:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel3.setText("Proceso 2:");
@@ -42,10 +48,37 @@ public class Ventana extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel4.setText("Proceso 3:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+        getContentPane().add(BarP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 230, 20));
+        getContentPane().add(BarP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 230, 20));
+        getContentPane().add(BarP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 230, 20));
+
+        bt_inicio.setText("Iniciar");
+        bt_inicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_inicioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bt_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 70, 40));
+
+        bt_parar.setText("Parar");
+        bt_parar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_pararActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bt_parar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 70, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bt_inicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_inicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_inicioActionPerformed
+
+    private void bt_pararActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_pararActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_pararActionPerformed
 
     /**
      * @param args the command line arguments
@@ -82,6 +115,11 @@ public class Ventana extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JProgressBar BarP1;
+    private javax.swing.JProgressBar BarP2;
+    private javax.swing.JProgressBar BarP3;
+    private javax.swing.JButton bt_inicio;
+    private javax.swing.JButton bt_parar;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
